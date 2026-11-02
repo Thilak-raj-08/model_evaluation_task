@@ -1,0 +1,14 @@
+1. Is the model performing well?
+Yes, the model performed reasonably well on the test data. The model using all four features had lower errors and a higher R² score than the model using only study hours.
+
+2. How large are the typical errors?
+The MAE was 4.72 marks, so predictions differed from actual scores by about 4.72 marks on average. The RMSE was 5.74 marks.
+
+3. Are there large outliers?
+The IQR check did not identify any residual outliers. However, some predictions still had larger errors, so this does not mean every prediction was accurate.
+
+4. Does the model explain much of the target variation?
+Yes. The R² score was 0.812, meaning the model explained about 81.2% of the variation in exam scores on the test data. This is not the same as 81.2% accuracy.
+
+5. What could improve the model?
+Collecting more representative student data and adding relevant features, such as sleep hours or study consistency, could help. Cross-validation would also help check whether the results remain consistent across different data splits.
